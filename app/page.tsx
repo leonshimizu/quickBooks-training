@@ -5,6 +5,7 @@ import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Textarea } from "./components/ui/textarea";
 import { Leaf, Feather, Droplet, Moon } from 'lucide-react'
+import Image from "next/image";
 
 export default function ZenQuickBooksTraining() {
   const [formData, setFormData] = useState({
@@ -178,10 +179,18 @@ export default function ZenQuickBooksTraining() {
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
             <blockquote>
-              <p className="text-2xl italic font-medium text-gray-900">"This mindful approach to QuickBooks has transformed not just my business finances, but my entire relationship with money. I feel more at peace and in control than ever before."</p>
+              <p className="text-2xl italic font-medium text-gray-900">
+                &quot;This mindful approach to QuickBooks has transformed not just my business finances, but my entire relationship with money. I feel more at peace and in control than ever before.&quot;
+              </p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
-              <img className="w-6 h-6 rounded-full" src="/placeholder.svg?height=24&width=24" alt="profile picture" />
+              <Image
+                className="w-6 h-6 rounded-full"
+                src="/placeholder.svg"
+                alt="profile picture"
+                width={24}
+                height={24}
+              />
               <div className="flex items-center divide-x-2 divide-gray-500">
                 <cite className="pr-3 font-medium text-gray-900">Sarah Johnson</cite>
                 <cite className="pl-3 text-sm text-gray-500">Yoga Studio Owner</cite>
