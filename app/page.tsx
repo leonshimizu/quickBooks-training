@@ -15,13 +15,13 @@ export default function ZenQuickBooksTraining() {
     message: ''
   })
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };  
 
   const handleSubmit = (e) => {
     e.preventDefault()
