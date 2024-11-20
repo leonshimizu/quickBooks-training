@@ -23,13 +23,13 @@ export default function ZenQuickBooksTraining() {
     }));
   };  
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData)
+    console.log("Form submitted:", formData);
     // Reset form after submission
-    setFormData({ name: '', email: '', phone: '', message: '' })
-  }
+    setFormData({ name: "", email: "", phone: "", message: "" });
+  };  
 
   return (
     <div className="min-h-screen bg-green-50">
