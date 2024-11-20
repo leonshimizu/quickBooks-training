@@ -62,9 +62,11 @@ export default function ZenQuickBooksTraining() {
             Discover inner peace through mindful financial management. Our zen-inspired QuickBooks training helps you harmonize your business and personal finances.
           </p>
           <div className="mt-10">
-          <Button size="lg" variant="white" className="bg-white text-green-600 hover:bg-green-50">
-            Begin Your Journey
-          </Button>
+            <a href="https://forms.gle/HuuF7VNv4nqAKQpU9" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="white" className="bg-white text-green-600 hover:bg-green-50">
+                Begin Your Journey
+              </Button>
+            </a>
           </div>
         </div>
       </div>
