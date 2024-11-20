@@ -1,5 +1,9 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 
-export const Input = (props) => {
-  return <input {...props} className="w-full px-4 py-2 border rounded" />;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  className?: string; // Allow additional custom classes
+}
+
+export const Input: React.FC<InputProps> = ({ className = "", ...props }) => {
+  return <input {...props} className={`w-full px-4 py-2 border rounded ${className}`} />;
 };
